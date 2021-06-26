@@ -15,6 +15,7 @@ public class Main {
         File[] folders  = path.listFiles(File::isDirectory);
         System.out.println("FOLDERS:");
 
+        assert folders != null;
         for (File folder : folders){
             System.out.println(folder);
         }
@@ -22,6 +23,7 @@ public class Main {
         File[] files = path.listFiles(File::isFile);
         System.out.println("FILES:");
 
+        assert files != null;
         for (File file : files){
             System.out.println(file);
         }
